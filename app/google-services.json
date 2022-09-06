@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "701152955068",
+    "project_id": "ibraheemtaskmanager",
+    "storage_bucket": "ibraheemtaskmanager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701152955068:android:ca7c0bd2b1611ad0f81eb9",
+        "android_client_info": {
+          "package_name": "gha.bahaa.ibraheemtaskmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701152955068-25khjpolab38k2tpf9mf633taasvhkup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKDuSqF7JIRUtEBIB_wPTjAG6D8ewo_Qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701152955068-25khjpolab38k2tpf9mf633taasvhkup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
