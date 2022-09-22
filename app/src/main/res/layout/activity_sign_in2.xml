@@ -43,7 +43,7 @@
             android:text="Sign up" />
 
         <Button
-            android:id="@+id/ButtonSignIn"
+            android:id="@+id/btnin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

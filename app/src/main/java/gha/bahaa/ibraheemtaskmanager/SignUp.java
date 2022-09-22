@@ -24,7 +24,8 @@ public class SignUp extends AppCompatActivity {
         etEmail2=findViewById(R.id.etEmail2);
         etPassword2=findViewById(R.id.etPassword2);
         etConfirm=findViewById(R.id.etConfirm);
-        ButtonSave=findViewById(R.id.ButtonSave);
+        ButtonSave=findViewById(R.id.ButtonSave);``
+
 
 
 
