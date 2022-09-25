@@ -52,48 +52,46 @@ public class sign_in extends AppCompatActivity {
     }
 
 
+    private void checkAndSave() {
+        String email = EtEmail.getText().toString();
+        String pass = Etpass.getText().toString();
+        boolean isOk = true;
+        if (email.length() == 0) {
+            EtEmail.setError("enter your email");
+            isOk = false;
+        }
+        if (pass.length() == 0) {
+            Etpass.setError("enter your password");
+            isOk = false;
+        }
+        if (email.indexOf('@') <= 0) {
+            EtEmail.setError("wrong email");
+            isOk = false;
+        }
 
-        private void checkAndSave() {
-            String email = EtEmail.getText().toString();
-            String pass = Etpass.getText().toString();
-            boolean isOk = true;
-            if (email.length() == 0) {
-                EtEmail.setError("enter your email");
-                isOk = false;
-            }
-            if (pass.length() == 0) {
-                Etpass.setError("enter your password");
-                isOk = false;
-            }
-            if (email.indexOf('@') <= 0) {
-                EtEmail.setError("wrong email");
-                isOk = false;
-            }
-
-            {
-                Etpass.setError("password at least 7 character");
-                isOk = false;
-            }
-            //******
-            if (isOk) {
-                FirebaseAuth auth = FirebaseAuth.getInstance();
-                auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(sign_in.this, "successful", Toast.LENGTH_SHORT).show();
-                            Intent i = new Intent(sign_in.this, MainActivity.class);
-                            startActivity(i);
-                            finish();
-                        } else {
-                            Toast.makeText(sign_in.this, "not successful", Toast.LENGTH_SHORT).show();
-                        }
+        {
+            Etpass.setError("password at least 7 character");
+            isOk = false;
+        }
+        //******
+        if (isOk) {
+            FirebaseAuth auth = FirebaseAuth.getInstance();
+            auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        Toast.makeText(sign_in.this, "successful", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(sign_in.this, MainActivity.class);
+                        startActivity(i);
+                        finish();
+                    } else {
+                        Toast.makeText(sign_in.this, "not successful", Toast.LENGTH_SHORT).show();
                     }
                 }
-            }
+            });
         }
+    }
 }
-
 
 
 
