@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/itmStettings"
         android:icon="@android:drawable/ic_menu_manage"
-        android:title="Stettings" />
+        android:iconTint="#FF0000"
+        android:title="Stettings"
+        app:showAsAction="always|withText" />
     <item
         android:id="@+id/itmHistory"
-        android:title="History" />
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:iconTint="#FF0000"
+        android:title="History"
+        app:showAsAction="always|withText" />
     <item
         android:id="@+id/itnSignOut"
-        android:title="SignOut" />
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:iconTint="#FFD500"
+        android:title="SignOut"
+        app:showAsAction="always|withText" />
 </menu>
