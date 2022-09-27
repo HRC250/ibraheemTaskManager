@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itmStettings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Stettings" />
+    <item
+        android:id="@+id/itmHistory"
+        android:title="History" />
+    <item
+        android:id="@+id/itnSignOut"
+        android:title="SignOut" />
+</menu>
