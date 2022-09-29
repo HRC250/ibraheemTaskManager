@@ -8,8 +8,15 @@ import android.media.audiofx.Equalizer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
+import android.widget.ListView;
+import android.widget.SearchView;
 
 public class MainActivity extends AppCompatActivity {
+    private SearchView Search;
+    private ImageButton imgbtn;
+    private ListView dyn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
 
-        if(item)
+
+
+
+
     }
     }
